@@ -1,0 +1,12 @@
+# ignore self
+.git
+
+# ignore dependencies
+node_modules
+
+# ignore test modules
+website
+website.min
+
+# ignore util
+scripts
