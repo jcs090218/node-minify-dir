@@ -3,21 +3,16 @@
 
 # minify-dir #
 
-> Minify all the files under a directory.
+Minify all the files under a directory.
 
 
-## Installation ##
+## Install ##
 ```sh
 $ npm install -g minify-dir
 ```
 
 
 ## Usage ##
-### CLI ###
-```sh
-$ minify-dir ./website ./website.min
-```
-
 ```sh
 usage : minify-dir I_FOLDER [output O_FOLDER]
 
@@ -30,12 +25,20 @@ optional arguments:
   O_FOLDER          Output all the minified files here.
 ```
 
-### Code ###
+### CLI ###
+```sh
+$ minify-dir ./website ./website.min
+```
+
+### Example Code ###
 ```js
 const minifyDir = require('../lib/minify-dir');
 
 /* Minify all files under this directory recursively. */
 minifyDir.minifyDirectory("./test/website");
+
+/* Minify a CSS/HTML/JS file. */
+minifyDir.minifyFile("./test/website/anyfile.html");
 
 /* Minify a CSS file. */
 minifyDir.minifyFileCSS("./test/website/css/style.css");
