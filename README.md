@@ -27,8 +27,7 @@ optional arguments:
 ```
 
 ### CLI ###
-Here we target `website` folder and output the minified 
-files to `website.min` folder.
+Try minify a `directory`.
 ```sh
 # Default Output => `website.min`
 $ minify-dir ./website
@@ -36,7 +35,7 @@ $ minify-dir ./website
 # Target Output => `website2`
 $ minify-dir ./website ./website2
 ```
-Or you can target `file` instead of a `directory`.
+Or you can minify `file` instead of a `directory`.
 ```sh
 # Default Output => `website.min/anyfile.html`
 $ minify-dir ./website/index.html
