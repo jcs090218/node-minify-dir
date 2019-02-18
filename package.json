@@ -1,6 +1,6 @@
 {
   "name": "minify-dir",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Minify all the files under a directory.",
   "main": "./lib/minify-dir.js",
   "repository": {
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "directory-tree": "^2.2.1",
+    "mkdirp": "^0.5.1",
     "request": "^2.88.0"
   },
   "devDependencies": {},
