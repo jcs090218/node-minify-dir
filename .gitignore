@@ -4,6 +4,9 @@
 # ignore dependencies
 node_modules
 
+# ignore package-lock
+package-lock.json
+
 # ignore test modules
 test
 
