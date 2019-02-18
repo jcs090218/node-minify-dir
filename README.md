@@ -54,3 +54,9 @@ minifyDir.minifyFileHTML("./test/website/index.html");
 /* Minify a JS file. */
 minifyDir.minifyFileJS("./test/website/js/main.js");
 ```
+
+
+## Service Provider ##
+* *HTML Minifider* - http://minifycode.com/
+* *CSS Minifier* - https://www.minifier.org/
+* *JS Minifier* - https://www.minifier.org/
