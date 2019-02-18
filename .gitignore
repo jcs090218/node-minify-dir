@@ -5,8 +5,7 @@
 node_modules
 
 # ignore test modules
-website
-website.min
+test
 
 # ignore util
 scripts
