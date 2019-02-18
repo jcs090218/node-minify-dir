@@ -1,0 +1,37 @@
+{
+  "name": "minify-dir",
+  "version": "1.0.0",
+  "description": "Minify all the files under a directory.",
+  "main": "./lib/minify-dir.js",
+  "dependencies": {
+    "directory-tree": "^2.2.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "keywords": [
+    "cli",
+    "compress",
+    "compressor",
+    "css",
+    "html",
+    "htmlmin",
+    "javascript",
+    "min",
+    "minification",
+    "minifier",
+    "minify",
+    "optimize",
+    "optimizer",
+    "pack",
+    "packer",
+    "parse",
+    "parser",
+    "uglifier",
+    "uglify"
+  ],
+  "author": "Jen-Chieh Shen",
+  "license": "MIT"
+}
