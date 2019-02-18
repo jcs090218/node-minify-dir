@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "Minify all the files under a directory.",
   "main": "./lib/minify-dir.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcs090218/node-minify-dir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jcs090218/node-minify-dir/issues"
+  },
   "dependencies": {
     "directory-tree": "^2.2.1",
     "request": "^2.88.0"
@@ -33,5 +40,9 @@
     "uglify"
   ],
   "author": "Jen-Chieh Shen",
-  "license": "MIT"
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "minify-dir": "./lib/cli.js"
+  }
 }
