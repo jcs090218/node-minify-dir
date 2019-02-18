@@ -30,16 +30,24 @@ optional arguments:
 Here we target `website` folder and output the minified 
 files to `website.min` folder.
 ```sh
-$ minify-dir ./website ./website.min
+# Default Output => `website.min`
+$ minify-dir ./website
+
+# Target Output => `website2`
+$ minify-dir ./website ./website2
 ```
 Or you can target `file` instead of a `directory`.
 ```sh
-$ minify-dir ./website/index.html ./website.min/index.html
+# Default Output => `website.min/anyfile.html`
+$ minify-dir ./website/index.html
+
+# Target Output => `website2/anyfile.html`
+$ minify-dir ./website/index.html ./website2/index.html
 ```
 
 
 ### Example Code ###
-Use `minify-dir`.
+Include `minify-dir` package in your code.
 ```js
 const minifyDir = require('minify-dir');
 ```
@@ -49,8 +57,11 @@ defualt will output to `website.min` directory.
 ```js
 minifyDir.minifyDirectory([source], [option destination]);
 
+/* Default Output => `website.min` */
 minifyDir.minifyDirectory("./website");
-minifyDir.minifyDirectory("./website", "./website.min");
+
+/* Target Output => `website2` */
+minifyDir.minifyDirectory("./website", "./website2");
 ```
 
 Minify a CSS/HTML/JS file, default will output 
@@ -58,8 +69,11 @@ to `website.min/anyfile.html`.
 ```js
 minifyDir.minifyFile([source], [option destination]);
 
+/* Default Output => `website.min/anyfile.html` */
 minifyDir.minifyFile("./website/anyfile.html");
-minifyDir.minifyFile("./website/anyfile.html", "./website.min/anyfile.html");
+
+/* Target Output => `website2/anyfile.html` */
+minifyDir.minifyFile("./website/anyfile.html", "./website2/anyfile.html");
 ```
 
 
