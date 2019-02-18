@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.com/jcs090218/node-minify-dir.svg?branch=master)](https://travis-ci.com/jcs090218/node-minify-dir)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
 # minify-dir #
 
 Minify all the files under a directory.
@@ -26,13 +27,17 @@ optional arguments:
 ```
 
 ### CLI ###
+Here we target `website` folder and output the minified 
+files to `website.min` folder.
 ```sh
 $ minify-dir ./website ./website.min
 ```
 
 ### Example Code ###
+Here is the list of APIs if you need to use these functionalities 
+in your project.
 ```js
-const minifyDir = require('../lib/minify-dir');
+const minifyDir = require('minify-dir');
 
 /* Minify all files under this directory recursively. */
 minifyDir.minifyDirectory("./test/website");
