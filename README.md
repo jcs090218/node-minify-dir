@@ -38,10 +38,10 @@ $ minify-dir ./website ./website2
 Or you can minify `file` instead of a `directory`.
 ```sh
 # Default Output => `website.min/anyfile.html`
-$ minify-dir ./website/index.html
+$ minify-dir ./website/anyfile.html
 
 # Target Output => `website2/anyfile.html`
-$ minify-dir ./website/index.html ./website2/index.html
+$ minify-dir ./website/anyfile.html ./website2/anyfile.html
 ```
 
 
