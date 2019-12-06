@@ -2,18 +2,20 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-# minify-dir #
+# minify-dir
 
 Minify all the files under a directory.
 
 
-## Install ##
+## Install
+
 ```sh
 $ npm install -g minify-dir
 ```
 
 
-## Usage ##
+## Usage
+
 ```sh
 usage : minify-dir I_FOLDER [output O_FOLDER]
 
@@ -26,8 +28,10 @@ optional arguments:
   O_FOLDER          Output all the minified files here.
 ```
 
-### CLI ###
+### CLI
+
 Try minify a `directory`.
+
 ```sh
 # Default Output => `website.min`
 $ minify-dir ./website
@@ -35,7 +39,9 @@ $ minify-dir ./website
 # Target Output => `website2`
 $ minify-dir ./website ./website2
 ```
+
 Or you can minify `file` instead of a `directory`.
+
 ```sh
 # Default Output => `website.min/anyfile.html`
 $ minify-dir ./website/anyfile.html
@@ -45,14 +51,17 @@ $ minify-dir ./website/anyfile.html ./website2/anyfile.html
 ```
 
 
-### Example Code ###
+### Example Code
+
 Include `minify-dir` package in your code.
+
 ```js
 const minifyDir = require('minify-dir');
 ```
 
 Minify all files under `website` directory recursively, 
 defualt will output to `website.min` directory.
+
 ```js
 minifyDir.minifyDirectory([source], [option destination]);
 
@@ -65,6 +74,7 @@ minifyDir.minifyDirectory("./website", "./website2");
 
 Minify a CSS/HTML/JS file, default will output 
 to `website.min/anyfile.html`.
+
 ```js
 minifyDir.minifyFile([source], [option destination]);
 
@@ -76,7 +86,8 @@ minifyDir.minifyFile("./website/anyfile.html", "./website2/anyfile.html");
 ```
 
 
-## Service Provider ##
+## Service Provider
+
 * *HTML Minifider* - http://minifycode.com/
 * *CSS Minifier* - https://www.minifier.org/
 * *JS Minifier* - https://www.minifier.org/
