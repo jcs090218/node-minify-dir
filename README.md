@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.com/jcs090218/node-minify-dir.svg?branch=master)](https://travis-ci.com/jcs090218/node-minify-dir)
+[![npm version](https://badge.fury.io/js/minify-dir.svg)](https://badge.fury.io/js/minify-dir)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![NPM](https://nodei.co/npm/minify-dir.png)](https://nodei.co/npm/minify-dir/)
 
 
 # minify-dir
